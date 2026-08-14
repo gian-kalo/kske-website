@@ -54,6 +54,12 @@ h1 {
     color: #333;
 }
 
+@media (max-width: 768px) {
+    .hero-content h1 {
+        font-size: 32px;
+        line-height: 1.2;
+    }
+}
 
 /* HERO */
 
