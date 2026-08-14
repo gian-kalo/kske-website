@@ -15,6 +15,10 @@
                 <img src="images/ΚΣΚΕ-logo.png" alt="Λογότυπο ΚΣΚΕ">
             </div>
 
+            <button class="menu-toggle" aria-label="Άνοιγμα μενού">
+                ☰
+            </button>
+
             <ul class="nav-links">
                 <li><a href="index.html">Αρχική</a></li>
                 <li><a href="about.html">Ποιοι Είμαστε</a></li>
@@ -290,5 +294,14 @@
         </div>
 
     </footer>
+
+    <script>
+        const menuToggle = document.querySelector('.menu-toggle');
+        const navLinks = document.querySelector('.nav-links');
+
+        menuToggle.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+    </script>
 </body>
 </html>
